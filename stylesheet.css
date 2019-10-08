@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant|Open+Sans');
+*{
+	box-sizing: border-box;
+} 
+
+body{
+	height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+    background-color: #f6f6f6;
+    background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+    font-family: 'Open Sans', sans-serif;
+} 
+
+#wrapper{
+	display: inline-grid;
+	width: 100%;
+	height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr) );
+    justify-content: space-around;
+    margin:5% 5%;
+    grid-gap: 3%;
+}
+
+#card1, #card2, #card3{
+	width: 280px;
+	height: 420px;
+	border-radius: 10px;
+    text-align: center;
+    transition: box-shadow: 10px 10px 5px grey;
+}
+
+#card1{
+    background-color: #fc5296;
+    background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%); 
+}
+
+#card2{
+   background-color: #00bfb2;
+   background-image: linear-gradient(315deg, #00bfb2 0%, #028090 74%);
+}
+
+#card3{
+   background-color: #f907fc;
+   background-image: linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);
+}
+
+ #card1:hover, #card2:hover, #card3:hover{
+   box-shadow: 10px 10px 5px grey;
+   transition: 2s;
+ }
+
+ #card1 > h5:hover, #card2 > h5:hover, #card3 > h5:hover{
+ 	  color:white;
+      cursor: pointer;
+      -webkit-transition: background-color 2s ease-out;
+ }
+
+ #card1 > h5:hover{
+   background-color: black;
+ }
+
+ #card2 > h5:hover{
+   background-color: #028090;
+ }
+
+  #card3 > h5:hover{
+  background-color: #bf00ff;
+ }
+
+#avatar{
+	margin-top: 30px;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 5px solid white;
+	box-shadow: 1px 2px 2px rgb(220,220,220, 3);
+} 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: black;
+  justify-content: space-around;
+}
+
+li {
+	margin-right: 30px;
+	margin-left: 35px;
+	float: left;
+    color: white;
+}
+
+h2{
+  font-size: 20px;
+  color: white;
+  margin-bottom: -5px;
+}
+
+h5{
+	padding: 4px;
+	width: 100px;
+	margin-left: 85px;
+	background-color: white;
+	border-radius: 15px;
+}
+
+p{
+	font-size: 15px;
+	margin-left: 8px;
+	margin-right: 8px;
+	color: white;
+}
+
+ li:hover{
+   cursor: pointer;
+  -webkit-transform: rotateY(360deg); /* Safari */
+  transform: rotateY(360deg);
+  -webkit-transition: transform 0.5s ease-out;
+ }
+
+ @media only screen and (max-width: 751px)  {
+#wrapper{
+  margin-right: 20vw;
+  margin-left: 20vw;
+  width: 60vw;
+  grid-gap: 5%;
+}
+}
+
+
+
