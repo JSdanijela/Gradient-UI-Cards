@@ -27,7 +27,6 @@ body{
 	height: 420px;
 	border-radius: 10px;
     text-align: center;
-    transition: box-shadow: 10px 10px 5px grey;
 }
 
 #card1{
