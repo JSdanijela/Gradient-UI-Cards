@@ -8,6 +8,8 @@ body{
 	width: 100vw;
 	overflow-x: hidden;
     background-color: #f6f6f6;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
     font-family: 'Open Sans', sans-serif;
 } 
@@ -16,7 +18,7 @@ body{
 	display: inline-grid;
 	width: 100%;
 	height: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr) );
+    grid-template-columns: repeat(auto-fit, minmax(380px,1fr) );
     justify-content: space-around;
     margin:5% 5%;
     grid-gap: 3%;
@@ -24,10 +26,19 @@ body{
 
 #card1, #card2, #card3{
 	width: 280px;
-	height: 420px;
+	height: 380px;
 	border-radius: 10px;
     text-align: center;
 }
+
+#avatar{
+  margin-top: -35px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 1px 2px 2px rgb(220,220,220, 3);
+} 
 
 #card1{
     background-color: #fc5296;
@@ -67,15 +78,6 @@ body{
   background-color: #bf00ff;
  }
 
-#avatar{
-	margin-top: 30px;
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	border: 5px solid white;
-	box-shadow: 1px 2px 2px rgb(220,220,220, 3);
-} 
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -86,8 +88,8 @@ ul {
 }
 
 li {
-	margin-right: 30px;
-	margin-left: 35px;
+	margin-right: 20px;
+	margin-left: 40px;
 	float: left;
     color: white;
 }
@@ -108,6 +110,7 @@ h5{
 
 p{
 	font-size: 15px;
+  margin-top: 30px;
 	margin-left: 8px;
 	margin-right: 8px;
 	color: white;
@@ -122,10 +125,9 @@ p{
 
  @media only screen and (max-width: 751px)  {
 #wrapper{
-  margin-right: 20vw;
-  margin-left: 20vw;
+  margin-left: 25vw;
   width: 60vw;
-  grid-gap: 5%;
+  grid-gap: 12%;
 }
 }
 
